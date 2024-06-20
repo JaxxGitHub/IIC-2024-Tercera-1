@@ -1,11 +1,11 @@
 <?php require_once "./parte_superior.php" ?>
 
-<div class="tiutlo">
+<div class="titulo">
     <p>Estudiar una carrera universitaria etc</p>
 </div>
 
 <body>
-    <div class="mmain-img">
+    <div class="main-img">
         <img src="./images/logo.png" alt="">
     </div>
 </body>
