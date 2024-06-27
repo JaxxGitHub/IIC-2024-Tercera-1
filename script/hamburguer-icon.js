@@ -6,7 +6,7 @@ this.eventhandlers()
         },
         eventhandlers: function (){
             document.querySelector('.hamburguer-icon').addEventListener('click', function (){
-            document.querySelector('menu-citainer').classList.toggle('menu-open');
+            document.querySelector('menu-container').classList.toggle('menu-open');
         })
 
     }

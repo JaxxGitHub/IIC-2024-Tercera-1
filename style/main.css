@@ -13,7 +13,7 @@ menu {
 
 .menu-izquierda {
     width: 50%;
-    background: aqua;
+    /*background: aqua;*/
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -28,7 +28,7 @@ menu {
 
 }
 
-.menu_container {
+.menu-container {
     width: 50%;
     height: 100%;
     display: flex;
@@ -61,6 +61,10 @@ menu {
 .enlaces-menu-derecha:hover {
     color: #f00;
 }
+
+/*body{
+    height: 2000px;
+}*/
 
 .titulo {
     width: 100%;
@@ -96,9 +100,72 @@ menu {
 }
 
 
+.main-accordion-container {
+    width: 100%;
+    border-bottom: 4px solid black;
+}
+
+.accordion-item {
+    background-color: bisque;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    border-top: 2px solid black;
+
+}
+
+.accordion-item:hover {
+    transform: scale(1.05);
+    border: 3px solid black;
+}
+
+
+.accordion-title {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(215, 245, 245);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+    pad: 10px 0;
+
+}
+
+.accordion-desc {
+    width: 100%;
+
+    border-top: 1px solid black;
+    display: none;
+    /*flex-direction: column;
+    align-items: center;
+    justify-content: center;
+*/
+}
+
+.accordion-title .tab-active {
+    font-size: 30px;
+    pointer-events: visible;
+}
+
+.tab-active .accordion-desc {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+
+}
+
 
 @media(max-width: 1025px) {
-    .menu_container {
+    .menu-container {
         width: 50%;
         height: 100%;
         display: flex;
@@ -106,10 +173,11 @@ menu {
         justify-content: flex-end;
         align-items: flex-start;
     }
+
     .menu-derecha {
         display: none;
     }
-    
+
     .hamburguer-icon {
         width: 55px;
         height: 50px;
@@ -124,33 +192,33 @@ menu {
         border: 1px solid black;
         border-radius: 5px;
     }
-   
-        span {
-            width: 50px;
-            height: 6px;
-            background-color: black;
-            display: block;
-            border-radius: 3px;
-        }
 
-        .menu-open .menu-derecha {
-            z-index: auto;
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: aliceblue;
-            border: 2px solid black;
-            border-radius: 15px;
-     
-        }
-
-        .enlaces-menu-derecha {
-           width: 100%;
-            text-align: center;
-            padding: 0 0 0 0;
-
-        }
+    span {
+        width: 50px;
+        height: 6px;
+        background-color: black;
+        display: block;
+        border-radius: 3px;
     }
+
+    .menu-open .menu-derecha {
+        z-index: auto;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        border: 2px solid black;
+        border-radius: 15px;
+
+    }
+
+    .enlaces-menu-derecha {
+        width: 100%;
+        text-align: center;
+        padding: 0 0 0 0;
+
+    }
+}
